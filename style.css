@@ -1,0 +1,163 @@
+.parent{
+    background-image: url(../expert_systeme/walp6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1500px;
+    width: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 30px;
+}
+
+.parent .form-class{
+    margin-left: 80px;
+
+}
+ul li{
+    list-style: none;
+}
+
+#start, #modify-rule-btn{
+    background-color: rgb(19, 165, 19);
+    color: white;
+    width: 100px;
+    height: auto;
+    border: 3px rgb(19, 165, 19) solid;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: none;
+    transition-duration: 1s;
+    margin-top: 10px;
+}
+
+#delete-btn{
+    background-color: rgb(19, 165, 19);
+    color: white;
+    width: 130px;
+    height: auto;
+    border: 3px rgb(19, 165, 19) solid;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: none;
+    transition-duration: 1s;
+    margin-top: 10px;
+}
+
+#delete-btn:hover{
+    background-color: rgb(61, 204, 61);
+    border: 3px rgb(61, 204, 61) solid;
+    transition-duration: 1s;
+    width: 140px;
+    height: auto;
+}
+
+
+#check{
+    cursor: pointer;
+    background-color: rgb(19, 165, 19);
+    color: white;
+    border: 3px rgb(19, 165, 19) solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#reset{
+    cursor: pointer;
+    background-color: rgb(162, 39, 39);
+    color: white;
+    border: 3px rgb(162, 39, 39) solid;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+#start:hover{
+    background-color: rgb(61, 204, 61);
+    border: 3px rgb(61, 204, 61) solid;
+    transition-duration: 1s;
+    letter-spacing: 2px;
+    width: 110px;
+    height: auto;
+}
+
+#modify-rule-btn:hover{
+    background-color: rgb(61, 204, 61);
+    border: 3px rgb(61, 204, 61) solid;
+    transition-duration: 1s;
+    width: 110px;
+    height: auto;
+
+}
+
+#check:hover{
+    background-color: rgb(61, 204, 61);
+    border: 3px rgb(61, 204, 61) solid;
+
+}
+
+#reset:hover{
+    background-color: rgb(185, 66, 66);
+    border: 3px rgb(185, 66, 66) solid;
+
+}
+
+ul li:checked + label{
+    color: red;
+}
+
+#rule-name, #rule-symptoms{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-color: white;
+}
+
+
+
+#add-rule{
+    border-radius: 5px;
+    background-color: rgb(19, 165, 19);
+    border-color: rgb(61, 204, 61);
+    color: white;
+    width: 80px;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+#rule-symptoms{
+    margin-left: 62px;
+}
+
+#rule-symptoms:focus{
+    background-color: rgb(247, 252, 252);
+    font-weight: bold;
+}
+
+#rule-name:focus{
+    background-color: rgb(247, 252, 252);
+    font-weight: bold;
+}
+
+
+#add-rule:hover{
+    background-color: rgb(61, 204, 61);
+    margin-left: 40px;
+    transition: 1s;
+
+}
+
+#table tr td{
+    color: yellow;
+    background-color: rgb(53, 48, 48);
+    padding: 15px;
+    border-radius: 9999px;
+    border: 2px solid yellow;
+}

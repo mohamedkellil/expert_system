@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medical Diagnosis System</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <div class="parent">
+    <h1>Medical Diagnosis System</h1>
+    <form>
+      <label for="fever">Do you have a fever?</label>
+      <input type="checkbox" id="fever" name="symptoms" value="fever">
+      <br>
+      <label for="soreThroat">Do you have a sore throat?</label>
+      <input type="checkbox" id="soreThroat" name="symptoms" value="sore throat">
+      <br>
+      <label for="cough">Do you have a cough?</label>
+      <input type="checkbox" id="cough" name="symptoms" value="cough">
+      <br>
+      <ul id="symptoms"></ul>
+      <button type="button" id="start">Start</button>
+      <button type="button" id="check">Check</button>
+      <button type="button" id="reset">Reset</button>
+    </form>
+    <br>
+    <table id="table"></table>
+    
+    <h2>Add a New Rule</h2>
+    <form id="add-rule-form">
+      <label for="rule-name">Condition Name:</label>
+      <input type="text" id="rule-name" name="ruleName">
+      <br>
+      <label for="rule-symptoms">Symptoms:</label>
+      <input type="text" id="rule-symptoms" name="ruleSymptoms">
+      <br>
+      <button type="submit" id="add-rule">Add Rule</button>
+    </form>
+
+    <section>
+      <h2>Modify Rule</h2>
+      <div>
+        <label for="rule-select">Select a rule to modify:</label>
+        <select id="rule-select"></select>
+      </div>
+      <div>
+        <label for="new-rule-name">New name:</label>
+        <input type="text" id="new-rule-name">
+      </div>
+      <div>
+        <label for="new-rule-symptoms">New symptoms:</label>
+        <input type="text" id="new-rule-symptoms">
+      </div>
+      <button id="modify-rule-btn">Update Rule</button>
+    </section>
+
+
+    <h1>Show and Delete Symptoms</h1>
+
+    <label for="symptom-select">Select a symptom to delete:</label>
+    <select id="symptom-select"></select>
+  
+    <button id="delete-btn">Delete Symptom</button>
+<!--
+    <script>
+      // Retrieve the symptoms from local storage
+      const symptoms = JSON.parse(localStorage.getItem('symptoms')) || [];
+  
+      // Populate the "Select a symptom to delete" dropdown list with the symptom names
+      const symptomSelect = document.getElementById('symptom-select');
+      symptoms.forEach(symptom => {
+        const option = document.createElement('option');
+        option.textContent = symptom;
+        symptomSelect.appendChild(option);
+      });
+  
+      // Delete symptom function
+      function deleteSymptom() {
+        const symptomSelect = document.getElementById('symptom-select');
+        const selectedSymptom = symptomSelect.value;
+  
+        // Remove the selected symptom from the symptoms array
+        const filteredSymptoms = symptoms.filter(symptom => symptom !== selectedSymptom);
+  
+        // Update the symptoms in local storage
+        localStorage.setItem('symptoms', JSON.stringify(filteredSymptoms));
+  
+        // Remove the deleted symptom from the dropdown list
+        symptomSelect.removeChild(symptomSelect.querySelector(`option[value='${selectedSymptom}']`));
+  
+        alert('Symptom deleted successfully!');
+      }
+  
+      // Add event listener to the "Delete Symptom" button
+      const deleteSymptomBtn = document.getElementById('delete-symptom-btn');
+      deleteSymptomBtn.addEventListener('click', deleteSymptom);
+    </script>
+    -->
+    <script src="ex-4.js">
+
+    </script>
+    </div>
+    </body>
+    </html>
